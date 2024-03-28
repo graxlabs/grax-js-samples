@@ -35,9 +35,14 @@ let searchopts = {
   'searchCreate': new GraxApi.SearchCreate()
 }
 searchopts.searchCreate.object ='Opportunity';
+
+// 'createdAt', 'modifiedAt', 'latestModifiedAt', 'rangeLatestModifiedAt', 'allModifiedAt', 'deletedAt' or 'purgedAt'. Defaults to 'createdAt'.
 searchopts.searchCreate.timeField = 'modifiedAt';
+
 searchopts.searchCreate.timeFieldMax = '2024-03-18T05:00:00Z';
 searchopts.searchCreate.timeFieldMin = '2024-01-01T04:00:00Z';
+
+// 'live', 'deleted', 'archived', 'archiveddeleted'
 searchopts.searchCreate.status = 'live';
 
 searchApiInstance.searchCreate(searchopts, (error, data, response) => {
