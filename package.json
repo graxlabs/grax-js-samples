@@ -1,0 +1,16 @@
+{
+  "name": "graxapitester",
+  "version": "1.0.0",
+  "description": "GRAX API Test Harness",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Joe Gaska",
+  "license": "ISC",
+  "dependencies": {
+    "grax_api": "github:graxlabs/grax-js",
+    "jszip": "^3.10.1"
+  }
+}
